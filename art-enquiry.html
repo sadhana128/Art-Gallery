@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Art Gallery Management System | Art Payment</title>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Meta tags -->
+    <!-- End of meta tags -->
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- End of Bootstrap CSS -->
+
+    <!-- Font Awesome Icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- End of Font Awesome Icons -->
+
+    <!-- Shoping cart CSS -->
+    <link rel="stylesheet" href="css/shop.css" type="text/css" />
+    <!-- End of Shoping cart CSS -->
+
+    <!-- Custom Stylesheets -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- End of Custom Stylesheets -->
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Sunflower:500,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- End of Google Fonts -->
+</head>
+<body>
+    <!-- <?php include_once('includes/header.php');?> -->
+
+    <!-- Banner -->
+    <div class="inner_page-banner one-img">
+    </div>
+    <!-- End of Banner -->
+
+    <!-- Breadcrumb -->
+    <div class="using-border py-3">
+        <div class="inner_breadcrumb ml-4">
+            <ul class="short_ls">
+                <li>
+                    <a href="index.php">Home</a>
+                    <span>/ /</span>
+                </li>
+                <li>Payment</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of Breadcrumb -->
+
+    <!-- Contact Section -->
+    <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+        <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Pay now</h3>
+            <div class="contact-list-grid">
+                <form action="art-enquiry.php" method="post">
+                    <div class="agile-wls-contact-mid">
+                        <div class="form-group contact-forms">
+                            <input class="form-control" type="text" name="fullname" required="true" placeholder="Name" />
+                        </div>
+                        <div class="form-group contact-forms">
+                            <input class="form-control" type="email" name="email" required="true" placeholder="Email" />
+                        </div>
+                        <div class="form-group contact-forms">
+                            <input class="form-control" type="text" name="mobnum" maxlength="10" pattern="[0-9]+" placeholder="Mobile Number" required="true" />
+                        </div>
+                        <div class="form-group contact-forms">
+                            <textarea class="form-control" name="message" placeholder="Amount" required="true" rows="1"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block sent-butnn" name="send">PAY</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact Section -->
+
+    <?php include_once('includes/footer.php');?>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/minicart.js"></script>
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- End of JavaScript -->
+</body>
+</html>
